@@ -1,0 +1,13 @@
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\obj\Debug\attach_server.py
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\obj\Debug\visualstudio_py_repl.py
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\obj\Debug\visualstudio_py_util.py
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\obj\Debug\__init__.py
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\obj\Debug\__main__.py
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\bin\AzureSetup.cfg
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\bin\wfastcgi.py
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\obj\Debug\web.config
+C:\Users\Shubh\documents\visual studio 2010\Projects\DemoProjectPythn\DemoProjectPythn\obj\Debug\web.debug.config

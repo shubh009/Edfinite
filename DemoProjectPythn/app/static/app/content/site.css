@@ -1,0 +1,219 @@
+﻿body {
+    /*padding-top: 50px;*/
+    padding-bottom: 20px;
+     font-family: 'Varela Round', sans-serif !important;
+    
+}
+
+.margin-bottom20
+{
+    margin-bottom:20px !important
+}
+.margintop20
+{
+    margin-top:20px !important;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+h1, h2, h3, h4, h5, h6
+{
+     font-family: 'Varela Round', sans-serif !important;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.navbar
+{
+    position:relative;
+}
+.navbar-inverse
+{
+    background-color:#70cbce !important;
+    border-bottom:none !important;
+    
+}
+.navbar-brand
+{
+    font-size:25px !important
+}
+.navbar-inverse a
+{
+    color:White !important
+}
+.navbar
+{
+    height:60px !important;
+    margin-bottom:0px !important
+}
+/* css for course Page*/
+
+.coursebg
+{
+    background-color:#eee;
+    padding-top:50px;
+    padding-bottom:50px
+}
+
+.blogtxt
+{
+    display: block;
+    padding: 0px 0px 0px 15px;
+    text-align: center;
+    z-index: 4;
+    color:black;
+    text-align:left;
+    width:96%;
+    line-height:26px;
+}
+.blogbox
+{
+    background-color:#fff;
+    float:left;
+    width:100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius:5px;
+}
+.blogbox img
+{
+      border-top-left-radius:5px;
+       border-top-right-radius:5px;
+}
+/*end course page css*/
+.noleftpadding
+{
+    padding-left:0px !important;
+}
+.norightpadding
+{
+    padding-right:0px !important;
+}
+.blogbox h3
+{
+    font-size:20px !important;
+}
+a
+{
+    text-decoration:none !important;
+}
+.blogbox a
+{
+    color:Black !important;
+}
+
+.course_prview {
+    height: 450px;
+    background-image: url(/media/bg.jpg);
+    background-size: cover;
+}
+.overlay-top-header {
+    position: static;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    height: 450px;
+}
+.overlay-top-header {
+    position: static;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    height: 450px;
+}
+.fulldiv {
+    width: 100%;
+}
+.topcontent h1 {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    color:White;
+    line-height: 1.1;
+    
+}
+.topcontent p {
+    color: White !important;
+    letter-spacing: 1.2px;
+}
+.topcontent {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 80px;
+}
+.whitebox
+{
+    background-color:#fff;
+    float:left;
+    width:100%;
+    border-radius:5px;
+    padding:20px 40px;
+}
+.borderbox
+{
+    border:solid 1px #ddd;
+    padding: 0px 30px 20px;
+   
+}
+.whitebox .badge
+{
+    background-color:#70cbce !important;
+    color:White;
+    padding:6px 10px;
+    letter-spacing:1px;
+    font-weight:normal !important;
+}
+.sidewhitebox
+{
+    background-color:#fff;
+    float:left;
+    width:100%;
+    border-radius:5px;
+    padding:15px;
+}
+.bg-white
+{
+    background-color:White !important
+}
