@@ -1,0 +1,52 @@
+{% extends "app/layout.html" %}
+{% block content %}
+   <div class="coursebg">
+        <div class="container">
+            <div class="col-lg-12 pull-left noleftpadding">
+                <div class="whitebox margintop20 margin-bottom20 body-content">
+                    <h3>
+                        Add New Employee</h3>
+                        <hr />
+                        <form class="contact-form" method="post" action="/EmpForm/">
+                        {%csrf_token%}
+                        <div class="row">
+                           <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Employee Id</label>
+                                <input type="text" class="form-control" name="EmpId">
+                            </div>
+                         </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Employee Name</label>
+                                <input type="text" class="form-control" name="EmpName">
+                            </div>
+                         </div>
+                           <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Employee Email Id</label>
+                                <input type="text" class="form-control" name="EmpEmail">
+                            </div>
+                         </div>
+                           <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Employee ContactNo</label>
+                                <input type="text" class="form-control" name="EmpContact">
+                            </div>
+                         </div>
+                         <div class="col-lg-6">
+                           </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                               
+                                <input type="Submit" class="btn btn-lg btn-danger pull-right" name="EmpSubmit">
+                            </div>
+                         </div>
+                       </div>
+                        </form>
+                 
+                </div>
+         </div>
+    </div>
+<div>
+{% endblock %}

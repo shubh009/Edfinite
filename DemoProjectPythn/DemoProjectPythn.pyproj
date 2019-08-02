@@ -29,6 +29,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
@@ -49,15 +52,16 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
-    <Folder Include="app\templates\Images\" />
     <Folder Include="DemoProjectPythn\" />
     <Folder Include="media\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\templates\app\AddEmp.html" />
+    <Content Include="app\templates\app\BookAppointment.html" />
     <Content Include="app\templates\app\CourseDetails.html" />
     <Content Include="app\templates\app\CourseList.html" />
+    <Content Include="app\templates\app\EmpList.html" />
     <Content Include="app\templates\app\JobDescription.html" />
-    <Content Include="app\templates\Images\onlinecourse.jpg" />
     <Content Include="media\bg.jpg" />
     <Content Include="media\inst1.png" />
     <Content Include="media\inst2.png" />

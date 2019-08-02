@@ -1,0 +1,20 @@
+{% extends "app/layout.html" %}
+{% block content %}
+ <div class="row coursebg">
+<div class="container">
+   <h3>Employee List will display here</h3>
+        <div class="col-lg-4 noleftpadding">
+            <div class="blogbox margin-bottom20 margintop20">
+                <div class="margintop20 margin-bottom20 blogtxt">
+                    <h3>Employee Name</h3>
+                        <hr/>
+                         {% for emp in Emplist%}
+                            <p>{{emp.empname}}</p>
+                          {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+{% endblock %}

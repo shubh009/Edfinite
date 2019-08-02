@@ -4,7 +4,10 @@
      font-family: 'Varela Round', sans-serif !important;
     
 }
-
+.padding-left20
+{
+    margin-left:20px !important
+}
 .margin-bottom20
 {
     margin-bottom:20px !important
@@ -27,7 +30,7 @@ h1, h2, h3, h4, h5, h6
 input,
 select,
 textarea {
-    max-width: 280px;
+    /*max-width: 280px;*/
 }
 
 /* styles for validation helpers */
@@ -162,6 +165,10 @@ a
 .fulldiv {
     width: 100%;
 }
+.halfddiv
+{
+    width:50%;
+}
 .topcontent h1 {
     text-transform: capitalize;
     font-size: 50px;
@@ -212,6 +219,47 @@ a
     width:100%;
     border-radius:5px;
     padding:15px;
+}
+.bg-white
+{
+    background-color:White !important
+}
+.coursebg table
+{
+    border:solid 1px #ddd;
+    border-spacing: 10px !important;
+}
+.coursebg table tbody tr
+{
+    border:solid 1px #ddd;
+}
+.coursebg  table tbody tr td
+{
+    border:solid 1px #ddd;
+    padding: 5px 10px;
+}
+.coursebg  table tbody tr th
+{
+    border:solid 1px #ddd;
+    padding: 5px 10px;
+    background-color:cadetblue !important;
+    color:White !important;
+}
+.higlightcolumn
+{
+    background-color:cadetblue !important;
+}
+.bg-success
+{
+    background-color:forestgreen !important;
+}
+.txtwhite
+{
+    color:White !important
+}
+.bg-danger
+{
+    background-color:firebrick !important
 }
 .bg-white
 {

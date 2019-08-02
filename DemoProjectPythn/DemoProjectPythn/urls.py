@@ -6,14 +6,18 @@ from datetime import datetime
 from django.conf.urls import patterns, url
 from app.forms import BootstrapAuthenticationForm
 
-# Uncomment the next lines to enable the admin:
-# from django.conf.urls import include
-# from django.contrib import admin
-# admin.autodiscover()
-
 from . import  settings
 from django.contrib.staticfiles.urls import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.views.generic import ListView
+
+# Uncomment the next lines to enable the admin:
+from django.conf.urls import include
+from django.contrib import admin
+from django.views.generic.list import ListView
+from app.models import Emp
+admin.autodiscover()
+
 
 urlpatterns = patterns('',
     # Examples:
@@ -22,6 +26,12 @@ urlpatterns = patterns('',
       url(r'^CourseList', 'app.views.CourseList', name='CourseList'),
        url(r'^CourseDetails', 'app.views.CourseDetails', name='CourseDetails'),
        url(r'^JobDescription', 'app.views.JobDescription', name='JobDescription'),
+        url(r'^BookAppointment', 'app.views.BookAppointment', name='BookAppointment'),
+       # url(r'^EmpList', 'app.views.EmpList', name='EmpList'),
+       #url(r'^AddEmp', 'app.views.AddEmp', name='AddEmp'),
+        url(r'^EmpForm', 'app.views.EmpForm', name='EmpForm'),
+       
+       
     url(r'^login/$',
         'django.contrib.auth.views.login',
         {
@@ -42,10 +52,10 @@ urlpatterns = patterns('',
         name='logout'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+     url(r'^admin/', include(admin.site.urls)),
 )
 
 urlpatterns += staticfiles_urlpatterns()

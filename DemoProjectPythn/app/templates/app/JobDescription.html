@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="fulldiv topcontent margin-bottom20">
                     <h1 class="txtwhite">
-                        <span>PHP Full Stack Developer</span>
+                        <span>{{JobInfo.ProfileName}}</span>
                     </h1>
                     <p>
                         <span>A Full Stack developer is responsible for front and back-end web development.
@@ -22,18 +22,10 @@
             <div class="col-lg-8 pull-left noleftpadding">
                 <div class="whitebox margintop20 margin-bottom20 body-content">
                     <h3>
-                         PHP Full Stack Developer: Job Oppurtunity</h3>
+                         {{Job_Desc.ParaName}}</h3>
                     <hr />
                     <p style="text-align: justify" class="margin-bottom20">
-                        A Full Stack developer is responsible for front and back-end web development. Usually,
-                        good full stack developers will understand several how to work with several languages
-                        and databases including PHP, HTML, CSS, JavaScript and everything in between. Writing
-                        a good job description for a full stack developer will require you to understand
-                        the skills and responsibilities needed for the specific project and ongoing work.Below
-                        you all find a sample template job description for a full stack developer. You can
-                        copy the Full Stack Developer job description, but make sure to add your own information
-                        for company culture, perks/benefits, as well as double-check that the skills match
-                        your exact requirements.</p>
+                       {{Job_Desc.ParaContent}}</p>
                 </div>
                  <div class="whitebox margintop20 margin-bottom20 body-content">
                     <h3>
@@ -60,33 +52,11 @@
                         Learning Path</h3>
                     <hr>
                     <div class="bg-white margin-bottom20 " style="letter-spacing:1px">
+                       {% for path in Job_LearningPath%}
                         <div style="border-bottom:solid 1px #eee; padding-bottom:15px; padding-top:15px">
-                           <strong><i class="glyphicon glyphicon-play-circle"> </i> Introuction to HTML5 and CSS3 </strong>
+                           <strong><i class="glyphicon glyphicon-play-circle"> </i> {{path.PathTittle}} </strong>
                         </div>
-                         <div style="border-bottom:solid 1px #eee; padding-bottom:15px; padding-top:15px">
-                           <strong><i class="glyphicon glyphicon-play-circle"> </i> Introuction to   Javascript</strong>
-                        </div>
-                         <div style="border-bottom:solid 1px #eee; padding-bottom:15px; padding-top:15px">
-                           <strong><i class="glyphicon glyphicon-play-circle"> </i> Introuction to PHP Basics</strong>
-                        </div>
-                         <div style="border-bottom:solid 1px #eee; padding-bottom:15px; padding-top:15px">
-                           <strong><i class="glyphicon glyphicon-play-circle"> </i> Introuction to PHP Advanced</strong>
-                        </div>
-                         <div style="border-bottom:solid 1px #eee; padding-bottom:15px; padding-top:15px">
-                           <strong><i class="glyphicon glyphicon-play-circle"> </i> Basic knowledge of SEO</strong>
-                        </div>
-                         <div style="border-bottom:solid 1px #eee; padding-bottom:15px; padding-top:15px">
-                           <strong><i class="glyphicon glyphicon-play-circle"> </i> Web server Setup i.e. Apache, Tomcat</strong>
-                        </div>
-                         <div style="border-bottom:solid 1px #eee; padding-bottom:15px; padding-top:15px">
-                           <strong><i class="glyphicon glyphicon-play-circle"> </i> Project Management</strong>
-                        </div>
-                          <div style="border-bottom:solid 1px #eee; padding-bottom:15px; padding-top:15px">
-                           <strong><i class="glyphicon glyphicon-play-circle"> </i> Live Project Training</strong>
-                        </div>
-                         <div style="border-bottom:solid 1px #eee; padding-bottom:15px; padding-top:15px">
-                           <strong><i class="glyphicon glyphicon-play-circle"> </i> Interview Training</strong>
-                        </div>
+                         {% endfor%}
                         
                     </div>
                 </div>
@@ -106,32 +76,22 @@
                 <div class="col-lg-8 norightpadding">
                     <div class=" margintop20 margin-bottom20 body-content">
                         <div style="margin-bottom: 50px" class="pull-left fulldiv">
+                           {% for inst in Job_Instrustor %}
                             <div class="col-lg-4 noleftpadding">
                                 <div class="blogbox margin-bottom20 ">
                                     <div class="">
-                                        <img src="/media/inst1.png" width="100%"></img>
+                                        <img src="{{ inst.ImagePath}}" width="100%"></img>
                                         <div class="margintop20 margin-bottom20 blogtxt">
-                                            <a href="{% url 'JobDescription' %}"><strong class="fulldiv pull-left"><span class="glyphicon glyphicon-user"
-                                                aria-hidden="true"></span> Krishan Kant Upadhyay</strong> <strong><span class="glyphicon glyphicon-usd"
-                                                    aria-hidden="true"></span> 11 Years Exp</strong> </a>
+                                            <a href="{% url 'BookAppointment' %}?Instid={{ inst.InstructorId}}"><strong class="fulldiv pull-left"><span class="glyphicon glyphicon-user"
+                                                aria-hidden="true"></span> {{ inst.Name}}</strong> <strong><span class="glyphicon glyphicon-calendar"
+                                                    aria-hidden="true"></span> {{ inst.Exp}} Year Exp</strong> </a>
                                               <input type="button" value="Book Appointment" class="btn" style="border:solid 1px black; pading:10px 15px; width:100%; background-color:white; margin-top:15px"></input>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 noleftpadding">
-                                <div class="blogbox margin-bottom20 ">
-                                    <div class="">
-                                        <img src="/media/inst2.png" width="100%"></img>
-                                        <div class="margintop20 margin-bottom20 blogtxt">
-                                            <a href="{% url 'JobDescription' %}"><strong class="fulldiv pull-left"><span class="glyphicon glyphicon-user"
-                                                aria-hidden="true"></span> Vinod Joshi</strong> <strong><span class="glyphicon glyphicon-usd"
-                                                    aria-hidden="true"></span>  11 Years Exp</strong> </a>
-                                              <input type="button" value="Book Appointment" class="btn" style="border:solid 1px black; pading:10px 15px; width:100%; background-color:white; margin-top:15px"></input>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor%}
+                           
                            
                          
                            
